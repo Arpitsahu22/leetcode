@@ -69,7 +69,13 @@ tags:
 
 <!-- solution:start -->
 
-### Solution 1
+### Solution 1: Math + Bit Manipulation
+
+In the problem, both $\textit{left}$ and $\textit{right}$ are within the range of $10^6$, and since $2^{20} = 1048576$, the number of $1$s in binary representation can be at most $20$. The prime numbers within $20$ are $[2, 3, 5, 7, 11, 13, 17, 19]$.
+
+We enumerate each number in the range $[\textit{left},.. \textit{right}]$, count the number of $1$s in its binary representation, and then check if this count is a prime number. If it is, we increment the answer by one.
+
+The time complexity is $O(n\times \log m)$, where $n = \textit{right} - \textit{left} + 1$ and $m$ is the maximum number in the range $[\textit{left},.. \textit{right}]$.
 
 <!-- tabs:start -->
 
@@ -108,7 +114,9 @@ public:
     int countPrimeSetBits(int left, int right) {
         unordered_set<int> primes{2, 3, 5, 7, 11, 13, 17, 19};
         int ans = 0;
-        for (int i = left; i <= right; ++i) ans += primes.count(__builtin_popcount(i));
+        for (int i = left; i <= right; ++i) {
+            ans += primes.count(__builtin_popcount(i));
+        }
         return ans;
     }
 };
@@ -126,6 +134,73 @@ func countPrimeSetBits(left int, right int) (ans int) {
 		ans += primes[bits.OnesCount(uint(i))]
 	}
 	return
+}
+```
+
+#### TypeScript
+
+```ts
+function countPrimeSetBits(left: number, right: number): number {
+    const primes = new Set<number>([2, 3, 5, 7, 11, 13, 17, 19]);
+    let ans = 0;
+
+    for (let i = left; i <= right; i++) {
+        const bits = bitCount(i);
+        if (primes.has(bits)) {
+            ans++;
+        }
+    }
+
+    return ans;
+}
+
+function bitCount(i: number): number {
+    i = i - ((i >>> 1) & 0x55555555);
+    i = (i & 0x33333333) + ((i >>> 2) & 0x33333333);
+    i = (i + (i >>> 4)) & 0x0f0f0f0f;
+    i = i + (i >>> 8);
+    i = i + (i >>> 16);
+    return i & 0x3f;
+}
+```
+
+#### Rust
+
+```rust
+impl Solution {
+    pub fn count_prime_set_bits(left: i32, right: i32) -> i32 {
+        let primes = [2, 3, 5, 7, 11, 13, 17, 19];
+        let mut ans = 0;
+
+        for i in left..=right {
+            let bits = i.count_ones() as i32;
+            if primes.contains(&bits) {
+                ans += 1;
+            }
+        }
+
+        ans
+    }
+}
+```
+
+#### C#
+
+```cs
+public class Solution {
+    public int CountPrimeSetBits(int left, int right) {
+        var primes = new HashSet<int> { 2, 3, 5, 7, 11, 13, 17, 19 };
+        int ans = 0;
+
+        for (int i = left; i <= right; ++i) {
+            int bits = BitOperations.PopCount((uint)i);
+            if (primes.Contains(bits)) {
+                ++ans;
+            }
+        }
+
+        return ans;
+    }
 }
 ```
 

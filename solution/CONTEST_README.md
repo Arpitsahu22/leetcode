@@ -26,6 +26,153 @@ comments: true
 
 ## 往期竞赛
 
+#### 第 495 场周赛(2026-03-29 10:30, 90 分钟) 参赛人数 1856
+
+- [3884. 双端字符匹配](/solution/3800-3899/3884.First%20Matching%20Character%20From%20Both%20Ends/README.md)
+- [3885. 设计事件管理器](/solution/3800-3899/3885.Design%20Event%20Manager/README.md)
+- [3886. 可排序整数求和](/solution/3800-3899/3886.Sum%20of%20Sortable%20Integers/README.md)
+- [3887. 增量偶权环查询](/solution/3800-3899/3887.Incremental%20Even-Weighted%20Cycle%20Queries/README.md)
+
+#### 第 179 场双周赛(2026-03-28 22:30, 90 分钟) 参赛人数 1258
+
+- [3880. 两个值之间的最小绝对差值](/solution/3800-3899/3880.Minimum%20Absolute%20Difference%20Between%20Two%20Values/README.md)
+- [3881. 恰好看到 K 个人的方向选择](/solution/3800-3899/3881.Direction%20Assignments%20with%20Exactly%20K%20Visible%20People/README.md)
+- [3882. 网格图中最小异或路径](/solution/3800-3899/3882.Minimum%20XOR%20Path%20in%20a%20Grid/README.md)
+- [3883. 统计满足数位和数组的非递减数组数目](/solution/3800-3899/3883.Count%20Non%20Decreasing%20Arrays%20With%20Given%20Digit%20Sums/README.md)
+
+#### 第 494 场周赛(2026-03-22 10:30, 90 分钟) 参赛人数 2464
+
+- [3875. 构造奇偶一致的数组 I](/solution/3800-3899/3875.Construct%20Uniform%20Parity%20Array%20I/README.md)
+- [3876. 构造奇偶一致的数组 II](/solution/3800-3899/3876.Construct%20Uniform%20Parity%20Array%20II/README.md)
+- [3877. 达到目标异或值的最少删除次数](/solution/3800-3899/3877.Minimum%20Removals%20to%20Achieve%20Target%20XOR/README.md)
+- [3878. 统计好子数组](/solution/3800-3899/3878.Count%20Good%20Subarrays/README.md)
+
+#### 第 493 场周赛(2026-03-15 10:30, 90 分钟) 参赛人数 2146
+
+- [3870. 统计范围内的逗号](/solution/3800-3899/3870.Count%20Commas%20in%20Range/README.md)
+- [3871. 统计范围内的逗号 II](/solution/3800-3899/3871.Count%20Commas%20in%20Range%20II/README.md)
+- [3872. 替换最多一个元素后的最长等差子数组](/solution/3800-3899/3872.Longest%20Arithmetic%20Sequence%20After%20Changing%20At%20Most%20One%20Element/README.md)
+- [3873. 添加一个点后可激活的最大点数](/solution/3800-3899/3873.Maximum%20Points%20Activated%20with%20One%20Addition/README.md)
+
+#### 第 178 场双周赛(2026-03-14 22:30, 90 分钟) 参赛人数 1437
+
+- [3866. 找到第一个唯一偶数](/solution/3800-3899/3866.First%20Unique%20Even%20Element/README.md)
+- [3867. 数对的最大公约数之和](/solution/3800-3899/3867.Sum%20of%20GCD%20of%20Formed%20Pairs/README.md)
+- [3868. 通过交换使数组相等的最小花费](/solution/3800-3899/3868.Minimum%20Cost%20to%20Equalize%20Arrays%20Using%20Swaps/README.md)
+- [3869. 统计区间内奇妙数的数目](/solution/3800-3899/3869.Count%20Fancy%20Numbers%20in%20a%20Range/README.md)
+
+#### 第 492 场周赛(2026-03-08 10:30, 90 分钟) 参赛人数 2065
+
+- [3861. 容量最小的箱子](/solution/3800-3899/3861.Minimum%20Capacity%20Box/README.md)
+- [3862. 找出最小平衡下标](/solution/3800-3899/3862.Find%20the%20Smallest%20Balanced%20Index/README.md)
+- [3863. 将一个字符串排序的最小操作次数](/solution/3800-3899/3863.Minimum%20Operations%20to%20Sort%20a%20String/README.md)
+- [3864. 划分二进制字符串的最小费用](/solution/3800-3899/3864.Minimum%20Cost%20to%20Partition%20a%20Binary%20String/README.md)
+
+#### 第 491 场周赛(2026-03-01 10:30, 90 分钟) 参赛人数 1256
+
+- [3856. 移除尾部元音字母](/solution/3800-3899/3856.Trim%20Trailing%20Vowels/README.md)
+- [3857. 拆分到 1 的最小总代价](/solution/3800-3899/3857.Minimum%20Cost%20to%20Split%20into%20Ones/README.md)
+- [3858. 按位或的最小值](/solution/3800-3899/3858.Minimum%20Bitwise%20OR%20From%20Grid/README.md)
+- [3859. 统计包含 K 个不同整数的子数组](/solution/3800-3899/3859.Count%20Subarrays%20With%20K%20Distinct%20Integers/README.md)
+
+#### 第 177 场双周赛(2026-02-28 22:30, 90 分钟) 参赛人数 1021
+
+- [3852. 不同频率的最小数对](/solution/3800-3899/3852.Smallest%20Pair%20With%20Different%20Frequencies/README.md)
+- [3853. 合并靠近字符](/solution/3800-3899/3853.Merge%20Close%20Characters/README.md)
+- [3854. 使数组奇偶交替的最少操作](/solution/3800-3899/3854.Minimum%20Operations%20to%20Make%20Array%20Parity%20Alternating/README.md)
+- [3855. 给定范围内 K 位数字之和](/solution/3800-3899/3855.Sum%20of%20K-Digit%20Numbers%20in%20a%20Range/README.md)
+
+#### 第 490 场周赛(2026-02-22 10:30, 90 分钟) 参赛人数 1025
+
+- [3847. 计算比赛分数差](/solution/3800-3899/3847.Find%20the%20Score%20Difference%20in%20a%20Game/README.md)
+- [3848. 阶数数字排列](/solution/3800-3899/3848.Check%20Digitorial%20Permutation/README.md)
+- [3849. 重新排列后的最大按位异或值](/solution/3800-3899/3849.Maximum%20Bitwise%20XOR%20After%20Rearrangement/README.md)
+- [3850. 统计结果等于 K 的序列数目](/solution/3800-3899/3850.Count%20Sequences%20to%20K/README.md)
+
+#### 第 489 场周赛(2026-02-15 10:30, 90 分钟) 参赛人数 1112
+
+- [3842. 切换打开灯泡](/solution/3800-3899/3842.Toggle%20Light%20Bulbs/README.md)
+- [3843. 频率唯一的第一个元素](/solution/3800-3899/3843.First%20Element%20with%20Unique%20Frequency/README.md)
+- [3844. 最长的准回文子字符串](/solution/3800-3899/3844.Longest%20Almost-Palindromic%20Substring/README.md)
+- [3845. 最大子数组异或值](/solution/3800-3899/3845.Maximum%20Subarray%20XOR%20with%20Bounded%20Range/README.md)
+
+#### 第 176 场双周赛(2026-02-14 22:30, 90 分钟) 参赛人数 950
+
+- [3838. 带权单词映射](/solution/3800-3899/3838.Weighted%20Word%20Mapping/README.md)
+- [3839. 前缀连接组的数目](/solution/3800-3899/3839.Number%20of%20Prefix%20Connected%20Groups/README.md)
+- [3840. 打家劫舍 V](/solution/3800-3899/3840.House%20Robber%20V/README.md)
+- [3841. 查询树上回文路径](/solution/3800-3899/3841.Palindromic%20Path%20Queries%20in%20a%20Tree/README.md)
+
+#### 第 488 场周赛(2026-02-08 10:30, 90 分钟) 参赛人数 1478
+
+- [3833. 统计主导元素下标数](/solution/3800-3899/3833.Count%20Dominant%20Indices/README.md)
+- [3834. 合并相邻且相等的元素](/solution/3800-3899/3834.Merge%20Adjacent%20Equal%20Elements/README.md)
+- [3835. 开销小于等于 K 的子数组数目](/solution/3800-3899/3835.Count%20Subarrays%20With%20Cost%20Less%20Than%20or%20Equal%20to%20K/README.md)
+- [3836. 恰好 K 个下标对的最大得分](/solution/3800-3899/3836.Maximum%20Score%20Using%20Exactly%20K%20Pairs/README.md)
+
+#### 第 487 场周赛(2026-02-01 10:30, 90 分钟) 参赛人数 1442
+
+- [3827. 统计单比特整数](/solution/3800-3899/3827.Count%20Monobit%20Integers/README.md)
+- [3828. 删除子数组后的最终元素](/solution/3800-3899/3828.Final%20Element%20After%20Subarray%20Deletions/README.md)
+- [3829. 设计共享出行系统](/solution/3800-3899/3829.Design%20Ride%20Sharing%20System/README.md)
+- [3830. 移除至多一个元素后的最长交替子数组](/solution/3800-3899/3830.Longest%20Alternating%20Subarray%20After%20Removing%20At%20Most%20One%20Element/README.md)
+
+#### 第 175 场双周赛(2026-01-31 22:30, 90 分钟) 参赛人数 1097
+
+- [3823. 反转一个字符串里的字母后反转特殊字符](/solution/3800-3899/3823.Reverse%20Letters%20Then%20Special%20Characters%20in%20a%20String/README.md)
+- [3824. 减小数组使其满足条件的最小 K 值](/solution/3800-3899/3824.Minimum%20K%20to%20Reduce%20Array%20Within%20Limit/README.md)
+- [3825. 按位与结果非零的最长上升子序列](/solution/3800-3899/3825.Longest%20Strictly%20Increasing%20Subsequence%20With%20Non-Zero%20Bitwise%20AND/README.md)
+- [3826. 最小分割分数](/solution/3800-3899/3826.Minimum%20Partition%20Score/README.md)
+
+#### 第 486 场周赛(2026-01-25 10:30, 90 分钟) 参赛人数 1500
+
+- [3818. 移除前缀使数组严格递增](/solution/3800-3899/3818.Minimum%20Prefix%20Removal%20to%20Make%20Array%20Strictly%20Increasing/README.md)
+- [3819. 非负元素轮替](/solution/3800-3899/3819.Rotate%20Non%20Negative%20Elements/README.md)
+- [3820. 树上的勾股距离节点](/solution/3800-3899/3820.Pythagorean%20Distance%20Nodes%20in%20a%20Tree/README.md)
+- [3821. 二进制中恰好K个1的第N小整数](/solution/3800-3899/3821.Find%20Nth%20Smallest%20Integer%20With%20K%20One%20Bits/README.md)
+
+#### 第 485 场周赛(2026-01-18 10:30, 90 分钟) 参赛人数 1495
+
+- [3813. 元音辅音得分](/solution/3800-3899/3813.Vowel-Consonant%20Score/README.md)
+- [3814. 预算下的最大总容量](/solution/3800-3899/3814.Maximum%20Capacity%20Within%20Budget/README.md)
+- [3815. 设计拍卖系统](/solution/3800-3899/3815.Design%20Auction%20System/README.md)
+- [3816. 删除重复字符后的字典序最小字符串](/solution/3800-3899/3816.Lexicographically%20Smallest%20String%20After%20Deleting%20Duplicate%20Characters/README.md)
+
+#### 第 174 场双周赛(2026-01-17 22:30, 90 分钟) 参赛人数 1109
+
+- [3809. 最好可到达的塔](/solution/3800-3899/3809.Best%20Reachable%20Tower/README.md)
+- [3810. 变成目标数组的最少操作次数](/solution/3800-3899/3810.Minimum%20Operations%20to%20Reach%20Target%20Array/README.md)
+- [3811. 交替按位异或分割的数目](/solution/3800-3899/3811.Number%20of%20Alternating%20XOR%20Partitions/README.md)
+- [3812. 翻转树上最少边](/solution/3800-3899/3812.Minimum%20Edge%20Toggles%20on%20a%20Tree/README.md)
+
+#### 第 484 场周赛(2026-01-11 10:30, 90 分钟) 参赛人数 1550
+
+- [3803. 统计残差前缀](/solution/3800-3899/3803.Count%20Residue%20Prefixes/README.md)
+- [3804. 中心子数组的数量](/solution/3800-3899/3804.Number%20of%20Centered%20Subarrays/README.md)
+- [3805. 统计凯撒加密对数目](/solution/3800-3899/3805.Count%20Caesar%20Cipher%20Pairs/README.md)
+- [3806. 增加操作后最大按位与的结果](/solution/3800-3899/3806.Maximum%20Bitwise%20AND%20After%20Increment%20Operations/README.md)
+
+#### 第 483 场周赛(2026-01-04 10:30, 90 分钟) 参赛人数 1373
+
+- [3798. 最大的偶数](/solution/3700-3799/3798.Largest%20Even%20Number/README.md)
+- [3799. 单词方块 II](/solution/3700-3799/3799.Word%20Squares%20II/README.md)
+- [3800. 使二进制字符串相等的最小成本](/solution/3800-3899/3800.Minimum%20Cost%20to%20Make%20Two%20Binary%20Strings%20Equal/README.md)
+- [3801. 合并有序列表的最小成本](/solution/3800-3899/3801.Minimum%20Cost%20to%20Merge%20Sorted%20Lists/README.md)
+
+#### 第 173 场双周赛(2026-01-03 22:30, 90 分钟) 参赛人数 1126
+
+- [3794. 反转字符串前缀](/solution/3700-3799/3794.Reverse%20String%20Prefix/README.md)
+- [3795. 不同元素和至少为 K 的最短子数组长度](/solution/3700-3799/3795.Minimum%20Subarray%20Length%20With%20Distinct%20Sum%20At%20Least%20K/README.md)
+- [3796. 找到带限制序列的最大值](/solution/3700-3799/3796.Find%20Maximum%20Value%20in%20a%20Constrained%20Sequence/README.md)
+- [3797. 统计在矩形格子里移动的路径数目](/solution/3700-3799/3797.Count%20Routes%20to%20Climb%20a%20Rectangular%20Grid/README.md)
+
+#### 第 482 场周赛(2025-12-28 10:30, 90 分钟) 参赛人数 1709
+
+- [3788. 分割的最大得分](/solution/3700-3799/3788.Maximum%20Score%20of%20a%20Split/README.md)
+- [3789. 采购的最小花费](/solution/3700-3799/3789.Minimum%20Cost%20to%20Acquire%20Required%20Items/README.md)
+- [3790. 最小全 1 倍数](/solution/3700-3799/3790.Smallest%20All-Ones%20Multiple/README.md)
+- [3791. 给定范围内平衡整数的数目](/solution/3700-3799/3791.Number%20of%20Balanced%20Integers%20in%20a%20Range/README.md)
+
 #### 第 481 场周赛(2025-12-21 10:30, 90 分钟) 参赛人数 1748
 
 - [3783. 整数的镜像距离](/solution/3700-3799/3783.Mirror%20Distance%20of%20an%20Integer/README.md)
@@ -77,7 +224,7 @@ comments: true
 
 #### 第 170 场双周赛(2025-11-22 22:30, 90 分钟) 参赛人数 1399
 
-- [3750. 最少反转次数得到翻转二进制字符串](/solution/3700-3799/3750.Minimum%20Number%20of%20Flips%20to%20Reverse%20Binary%20String/README.md)
+- [3750. 最少翻转次数得到反转二进制字符串](/solution/3700-3799/3750.Minimum%20Number%20of%20Flips%20to%20Reverse%20Binary%20String/README.md)
 - [3751. 范围内总波动值 I](/solution/3700-3799/3751.Total%20Waviness%20of%20Numbers%20in%20Range%20I/README.md)
 - [3752. 字典序最小和为目标值且绝对值是排列的数组](/solution/3700-3799/3752.Lexicographically%20Smallest%20Negated%20Permutation%20that%20Sums%20to%20Target/README.md)
 - [3753. 范围内总波动值 II](/solution/3700-3799/3753.Total%20Waviness%20of%20Numbers%20in%20Range%20II/README.md)
@@ -360,7 +507,7 @@ comments: true
 - [3550. 数位和等于下标的最小下标](/solution/3500-3599/3550.Smallest%20Index%20With%20Digit%20Sum%20Equal%20to%20Index/README.md)
 - [3551. 数位和排序需要的最小交换次数](/solution/3500-3599/3551.Minimum%20Swaps%20to%20Sort%20by%20Digit%20Sum/README.md)
 - [3552. 网格传送门旅游](/solution/3500-3599/3552.Grid%20Teleportation%20Traversal/README.md)
-- [3553. 包含给定路径的最小带权子树 II](/solution/3500-3599/3553.Minimum%20Weighted%20Subgraph%20With%20the%20Required%20Paths%20II/README.md)
+- [3553. 包含要求路径的最小带权子图 II](/solution/3500-3599/3553.Minimum%20Weighted%20Subgraph%20With%20the%20Required%20Paths%20II/README.md)
 
 #### 第 449 场周赛(2025-05-11 10:30, 90 分钟) 参赛人数 2220
 
@@ -481,14 +628,14 @@ comments: true
 - [3469. 移除所有数组元素的最小代价](/solution/3400-3499/3469.Find%20Minimum%20Cost%20to%20Remove%20Array%20Elements/README.md)
 - [3470. 全排列 IV](/solution/3400-3499/3470.Permutations%20IV/README.md)
 
-#### 第 438 场周赛(2025-02-23 10:30, 90 分钟) 参赛人数 2401
+#### 第 438 场周赛(2025-02-23 10:30, 90 分钟) 参赛人数 2402
 
 - [3461. 判断操作后字符串中的数字是否相等 I](/solution/3400-3499/3461.Check%20If%20Digits%20Are%20Equal%20in%20String%20After%20Operations%20I/README.md)
 - [3462. 提取至多 K 个元素的最大总和](/solution/3400-3499/3462.Maximum%20Sum%20With%20at%20Most%20K%20Elements/README.md)
 - [3463. 判断操作后字符串中的数字是否相等 II](/solution/3400-3499/3463.Check%20If%20Digits%20Are%20Equal%20in%20String%20After%20Operations%20II/README.md)
 - [3464. 正方形上的点之间的最大距离](/solution/3400-3499/3464.Maximize%20the%20Distance%20Between%20Points%20on%20a%20Square/README.md)
 
-#### 第 437 场周赛(2025-02-16 10:30, 90 分钟) 参赛人数 1992
+#### 第 437 场周赛(2025-02-16 10:30, 90 分钟) 参赛人数 1993
 
 - [3456. 找出长度为 K 的特殊子字符串](/solution/3400-3499/3456.Find%20Special%20Substring%20of%20Length%20K/README.md)
 - [3457. 吃披萨](/solution/3400-3499/3457.Eat%20Pizzas%21/README.md)
@@ -502,7 +649,7 @@ comments: true
 - [3454. 分割正方形 II](/solution/3400-3499/3454.Separate%20Squares%20II/README.md)
 - [3455. 最短匹配子字符串](/solution/3400-3499/3455.Shortest%20Matching%20Substring/README.md)
 
-#### 第 436 场周赛(2025-02-09 10:30, 90 分钟) 参赛人数 2044
+#### 第 436 场周赛(2025-02-09 10:30, 90 分钟) 参赛人数 2045
 
 - [3446. 按对角线进行矩阵排序](/solution/3400-3499/3446.Sort%20Matrix%20by%20Diagonals/README.md)
 - [3447. 将元素分配给有约束条件的组](/solution/3400-3499/3447.Assign%20Elements%20to%20Groups%20with%20Constraints/README.md)
@@ -2103,7 +2250,7 @@ comments: true
 - [2200. 找出数组中的所有 K 近邻下标](/solution/2200-2299/2200.Find%20All%20K-Distant%20Indices%20in%20an%20Array/README.md)
 - [2201. 统计可以提取的工件](/solution/2200-2299/2201.Count%20Artifacts%20That%20Can%20Be%20Extracted/README.md)
 - [2202. K 次操作后最大化顶端元素](/solution/2200-2299/2202.Maximize%20the%20Topmost%20Element%20After%20K%20Moves/README.md)
-- [2203. 得到要求路径的最小带权子图](/solution/2200-2299/2203.Minimum%20Weighted%20Subgraph%20With%20the%20Required%20Paths/README.md)
+- [2203. 包含要求路径的最小带权子图](/solution/2200-2299/2203.Minimum%20Weighted%20Subgraph%20With%20the%20Required%20Paths/README.md)
 
 #### 第 283 场周赛(2022-03-06 10:30, 90 分钟) 参赛人数 7817
 
@@ -2859,7 +3006,7 @@ comments: true
 - [1629. 按键持续时间最长的键](/solution/1600-1699/1629.Slowest%20Key/README.md)
 - [1630. 等差子数组](/solution/1600-1699/1630.Arithmetic%20Subarrays/README.md)
 - [1631. 最小体力消耗路径](/solution/1600-1699/1631.Path%20With%20Minimum%20Effort/README.md)
-- [1632. 矩阵转换后的秩](/solution/1600-1699/1632.Rank%20Transform%20of%20a%20Matrix/README.md)
+- [1632. 矩阵转换后的排名](/solution/1600-1699/1632.Rank%20Transform%20of%20a%20Matrix/README.md)
 
 #### 第 211 场周赛(2020-10-18 10:30, 90 分钟) 参赛人数 4034
 

@@ -322,12 +322,15 @@ Press <kbd>Control</kbd> + <kbd>F</kbd>(or <kbd>Command</kbd> + <kbd>F</kbd> on 
 | 3611 | [Find Overbooked Employees](/solution/3600-3699/3611.Find%20Overbooked%20Employees/README_EN.md)                                                                                             | `Database` | Medium     |        |
 | 3617 | [Find Students with Study Spiral Pattern](/solution/3600-3699/3617.Find%20Students%20with%20Study%20Spiral%20Pattern/README_EN.md)                                                           |            | Hard       |        |
 | 3626 | [Find Stores with Inventory Imbalance](/solution/3600-3699/3626.Find%20Stores%20with%20Inventory%20Imbalance/README_EN.md)                                                                   |            | Medium     |        |
-| 3642 | [Find Books with Polarized Opinions](/solution/3600-3699/3642.Find%20Books%20with%20Polarized%20Opinions/README_EN.md)                                                                       |            | Easy       |        |
+| 3642 | [Find Books with Polarized Opinions](/solution/3600-3699/3642.Find%20Books%20with%20Polarized%20Opinions/README_EN.md)                                                                       |            | Medium     |        |
 | 3657 | [Find Loyal Customers](/solution/3600-3699/3657.Find%20Loyal%20Customers/README_EN.md)                                                                                                       |            | Medium     |        |
 | 3673 | [Find Zombie Sessions](/solution/3600-3699/3673.Find%20Zombie%20Sessions/README_EN.md)                                                                                                       |            | Hard       |        |
 | 3705 | [Find Golden Hour Customers](/solution/3700-3799/3705.Find%20Golden%20Hour%20Customers/README_EN.md)                                                                                         |            | Medium     |        |
 | 3716 | [Find Churn Risk Customers](/solution/3700-3799/3716.Find%20Churn%20Risk%20Customers/README_EN.md)                                                                                           |            | Medium     |        |
 | 3764 | [Most Common Course Pairs](/solution/3700-3799/3764.Most%20Common%20Course%20Pairs/README_EN.md)                                                                                             |            | Hard       |        |
+| 3793 | [Find Users with High Token Usage](/solution/3700-3799/3793.Find%20Users%20with%20High%20Token%20Usage/README_EN.md)                                                                         |            | Easy       |        |
+| 3808 | [Find Emotionally Consistent Users](/solution/3800-3899/3808.Find%20Emotionally%20Consistent%20Users/README_EN.md)                                                                           |            | Medium     |        |
+| 3832 | [Find Users with Persistent Behavior Patterns](/solution/3800-3899/3832.Find%20Users%20with%20Persistent%20Behavior%20Patterns/README_EN.md)                                                 |            | Hard       |        |
 
 ## Copyright
 

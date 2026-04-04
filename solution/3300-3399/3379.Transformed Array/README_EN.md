@@ -23,8 +23,8 @@ tags:
 For each index <code>i</code> (where <code>0 &lt;= i &lt; nums.length</code>), perform the following <strong>independent</strong> actions:
 
 <ul>
-	<li>If <code>nums[i] &gt; 0</code>: Start at index <code>i</code> and move <code>nums[i]</code> steps to the <strong>right</strong> in the circular array. Set <code>result[i]</code> to the value of the index where you land.</li>
-	<li>If <code>nums[i] &lt; 0</code>: Start at index <code>i</code> and move <code>abs(nums[i])</code> steps to the <strong>left</strong> in the circular array. Set <code>result[i]</code> to the value of the index where you land.</li>
+	<li>If <code>nums[i] &gt; 0</code>: Start at index <code>i</code> and move <code>nums[i]</code> steps to the <strong>right</strong> in the circular array. Set <code>result[i]</code> to the value at the index where you land.</li>
+	<li>If <code>nums[i] &lt; 0</code>: Start at index <code>i</code> and move <code>abs(nums[i])</code> steps to the <strong>left</strong> in the circular array. Set <code>result[i]</code> to the value at&nbsp;the index where you land.</li>
 	<li>If <code>nums[i] == 0</code>: Set <code>result[i]</code> to <code>nums[i]</code>.</li>
 </ul>
 
@@ -80,7 +80,11 @@ For each index <code>i</code> (where <code>0 &lt;= i &lt; nums.length</code>), p
 
 <!-- solution:start -->
 
-### Solution 1
+### Solution 1: Simulation
+
+We create a result array $\textit{ans}$. For each index, we move right or left $|nums[i]|$ steps based on whether $nums[i]$ is positive or negative, calculate the landing index, and assign the value at that index to $\textit{ans}[i]$.
+
+The time complexity is $O(n)$ and the space complexity is $O(n)$, where $n$ is the length of the array $nums$.
 
 <!-- tabs:start -->
 
@@ -89,11 +93,8 @@ For each index <code>i</code> (where <code>0 &lt;= i &lt; nums.length</code>), p
 ```python
 class Solution:
     def constructTransformedArray(self, nums: List[int]) -> List[int]:
-        ans = []
         n = len(nums)
-        for i, x in enumerate(nums):
-            ans.append(nums[(i + x + n) % n] if x else 0)
-        return ans
+        return [nums[(i + x % n + n) % n] for i, x in enumerate(nums)]
 ```
 
 #### Java
@@ -104,7 +105,7 @@ class Solution {
         int n = nums.length;
         int[] ans = new int[n];
         for (int i = 0; i < n; ++i) {
-            ans[i] = nums[i] != 0 ? nums[(i + nums[i] % n + n) % n] : 0;
+            ans[i] = nums[(i + nums[i] % n + n) % n];
         }
         return ans;
     }
@@ -120,7 +121,7 @@ public:
         int n = nums.size();
         vector<int> ans(n);
         for (int i = 0; i < n; ++i) {
-            ans[i] = nums[i] ? nums[(i + nums[i] % n + n) % n] : 0;
+            ans[i] = nums[(i + nums[i] % n + n) % n];
         }
         return ans;
     }
@@ -134,9 +135,7 @@ func constructTransformedArray(nums []int) []int {
 	n := len(nums)
 	ans := make([]int, n)
 	for i, x := range nums {
-		if x != 0 {
-			ans[i] = nums[(i+x%n+n)%n]
-		}
+		ans[i] = nums[(i+x%n+n)%n]
 	}
 	return ans
 }
@@ -149,9 +148,24 @@ function constructTransformedArray(nums: number[]): number[] {
     const n = nums.length;
     const ans: number[] = [];
     for (let i = 0; i < n; ++i) {
-        ans.push(nums[i] ? nums[(i + (nums[i] % n) + n) % n] : 0);
+        ans.push(nums[(i + (nums[i] % n) + n) % n]);
     }
     return ans;
+}
+```
+
+#### Rust
+
+```rust
+impl Solution {
+    pub fn construct_transformed_array(nums: Vec<i32>) -> Vec<i32> {
+        let n = nums.len() as i32;
+        let mut ans = vec![0; nums.len()];
+        for (i, &x) in nums.iter().enumerate() {
+            ans[i] = nums[(((i as i32 + x % n + n) % n) as usize)];
+        }
+        ans
+    }
 }
 ```
 

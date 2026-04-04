@@ -19,7 +19,7 @@ tags:
 
 <!-- description:start -->
 
-<p>给你一个长度为 <code>n</code>&nbsp;的<span data-keyword="prime">质数</span>数组&nbsp;<code>nums</code>&nbsp;。你的任务是返回一个长度为 <code>n</code>&nbsp;的数组 <code>ans</code>&nbsp;，对于每个下标 <code>i</code>&nbsp;，以下<strong>&nbsp;条件</strong>&nbsp;均成立：</p>
+<p>给你一个长度为 <code>n</code>&nbsp;的 <span data-keyword="prime-number">质数</span> 数组&nbsp;<code>nums</code>&nbsp;。你的任务是返回一个长度为 <code>n</code>&nbsp;的数组 <code>ans</code>&nbsp;，对于每个下标 <code>i</code>&nbsp;，以下<strong>&nbsp;条件</strong>&nbsp;均成立：</p>
 
 <ul>
 	<li><code>ans[i] OR (ans[i] + 1) == nums[i]</code></li>
@@ -198,6 +198,29 @@ function minBitwiseArray(nums: number[]): number[] {
         }
     }
     return ans;
+}
+```
+
+#### Rust
+
+```rust
+impl Solution {
+    pub fn min_bitwise_array(nums: Vec<i32>) -> Vec<i32> {
+        let mut ans = Vec::with_capacity(nums.len());
+        for x in nums {
+            if x == 2 {
+                ans.push(-1);
+            } else {
+                for i in 1..32 {
+                    if (((x >> i) & 1) ^ 1) == 1 {
+                        ans.push(x ^ (1 << (i - 1)));
+                        break;
+                    }
+                }
+            }
+        }
+        ans
+    }
 }
 ```
 
