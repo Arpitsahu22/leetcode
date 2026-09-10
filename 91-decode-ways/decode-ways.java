@@ -1,39 +1,24 @@
-// Recursion
-/*class Solution {
-    public int numDecodings(String s) {
-        return solve(0, s);
-    }
-    int solve(int i, String s) {
-        if (i == s.length()) return 1;
-        if (s.charAt(i) == '0') return 0;
-        int one = solve(i + 1, s);
-        int two = 0;
-        if (i + 1 < s.length()) {
-            int num = Integer.parseInt(s.substring(i, i + 2));
-            if (num >= 10 && num <= 26) two = solve(i + 2, s);
-        }
-        return one + two;
-    }
-}*/
-
 class Solution {
     public int numDecodings(String s) {
         int dp [] = new int[s.length()];
-        Arrays.fill(dp, -1);
+        for (int i = 0; i < s.length(); i++) {
+            Arrays.fill(dp, -1);
+        }
         return solve(0, s, dp);
     }
-    int solve(int i, String s, int dp []) {
-        if (i == s.length()) return 1;
+    public int solve(int i, String s, int dp []) {
+        if (i >= s.length()) return 1;
         if (s.charAt(i) == '0') return 0;
         if (dp[i] != -1) return dp[i];
-        int one = solve(i + 1, s, dp);
-        int two = 0;
-        if (i + 1 < s.length()) {
-            int num = Integer.parseInt(s.substring(i, i + 2));
-            if (num >= 10 && num <= 26) {
-                two = solve(i + 2, s, dp);
-            }
+        int single = solve(i + 1, s, dp);
+        int twoNumber = 0;
+        if (i < s.length() - 1) {
+            int curr = s.charAt(i) - 48;
+            int next = s.charAt(i + 1) - 48;
+            int num = curr * 10 + next;
+            if (num <= 26) twoNumber = solve(i + 2, s, dp);
         }
-        return dp[i] = one + two;
+        dp[i] = single + twoNumber;
+        return dp[i];
     }
 }
