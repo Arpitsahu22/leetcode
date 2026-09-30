@@ -1,72 +1,62 @@
-// Recursion
-/*
 class Solution {
+
+     class Tuple{
+        int value;
+        int x;
+        int y;
+
+        Tuple(int value, int x, int y){
+            this.x=x;
+            this.y=y;
+            this.value = value;
+
+        }
+        
+    }
     public int longestIncreasingPath(int[][] matrix) {
-        int m = matrix.length;
-        int n = matrix[0].length;
-        int ans = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                ans = Math.max(ans, solve(matrix, i, j, m, n));
+
+
+        List<Tuple>list = new ArrayList<>();
+        for(int i = 0; i <matrix.length;i++){
+            for(int j = 0; j<matrix[0].length; j++){
+                int curr = matrix[i][j];
+                Tuple temp = new Tuple(curr,i,j);
+                list.add(temp);
             }
         }
-        return ans;
-    }
-    public int solve(int[][] matrix, int i, int j, int m, int n) {
-        int up = 0;
-        int down = 0;
-        int left = 0;
-        int right = 0;
+        ////arrow function, comparable, comparator
+        list.sort((a,b) -> Integer.compare(a.value,b.value));
 
-        if (i > 0 && matrix[i - 1][j] > matrix[i][j]) {
-            up = solve(matrix, i - 1, j, m, n);
-        }
-        if (i < m - 1 && matrix[i + 1][j] > matrix[i][j]) {
-            down = solve(matrix, i + 1, j, m, n);
-        }
-        if (j > 0 && matrix[i][j - 1] > matrix[i][j]) {
-            left = solve(matrix, i, j - 1, m, n);
-        }
-        if (j < n - 1 && matrix[i][j + 1] > matrix[i][j]) {
-            right = solve(matrix, i, j + 1, m, n);
-        }
-        return 1 + Math.max(Math.max(up, down), Math.max(left, right));
-    }
-}
-*/
-class Solution {
-    public int longestIncreasingPath(int[][] matrix) {
-        int m = matrix.length;
-        int n = matrix[0].length;
-        int[][] dp = new int[m][n];
+        int[][] dp = new int[matrix.length][matrix[0].length];
+
         int ans = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                ans = Math.max(ans, solve(matrix, i, j, m, n, dp));
-            }
-        }
-        return ans;
-    }
-    public int solve(int[][] matrix, int i, int j, int m, int n, int[][] dp) {
-        if (dp[i][j] != 0) return dp[i][j];
-        int up = 0;
-        int down = 0;
-        int left = 0;
-        int right = 0;
 
-        if (i > 0 && matrix[i - 1][j] > matrix[i][j]) {
-            up = solve(matrix, i - 1, j, m, n, dp);
+        for(Tuple curr : list){
+            int value = curr.value;
+            int x = curr.x;
+            int y = curr.y;
+
+            dp[x][y] = 1;
+
+            if(x > 0 && matrix[x-1][y] < value){
+                dp[x][y] = Math.max(dp[x][y],dp[x-1][y] + 1);
+            }
+
+            if(x < matrix.length-1 && matrix[x+1][y] < value){
+                dp[x][y] = Math.max(dp[x][y],dp[x+1][y] + 1);
+            }
+
+            if(y > 0 && matrix[x][y-1] < value){
+                dp[x][y] = Math.max(dp[x][y],dp[x][y-1] + 1);
+            }
+
+            if(y < matrix[0].length-1 && matrix[x][y+1] < value){
+                dp[x][y] = Math.max(dp[x][y],dp[x][y+1] + 1);
+            }
+
+            ans = Math.max(ans,dp[x][y]);
         }
-        if (i < m - 1 && matrix[i + 1][j] > matrix[i][j]) {
-            down = solve(matrix, i + 1, j, m, n, dp);
-        }
-        if (j > 0 && matrix[i][j - 1] > matrix[i][j]) {
-            left = solve(matrix, i, j - 1, m, n, dp);
-        }
-        if (j < n - 1 && matrix[i][j + 1] > matrix[i][j]) {
-            right = solve(matrix, i, j + 1, m, n, dp);
-        }
-        dp[i][j] = 1 + Math.max(Math.max(up, down), Math.max(left, right));
-        return dp[i][j];
+
+        return ans;
     }
 }
