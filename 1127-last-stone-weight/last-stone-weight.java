@@ -7,10 +7,8 @@ class Solution {
 
             int a = stones[n - 1];
             int b = stones[n - 2];
-
-            //if (a != b) {
-                stones[n - 2] = a - b;
-           // }
+            
+            stones[n - 2] = a - b;
             n--;
         }
         return stones[0];
