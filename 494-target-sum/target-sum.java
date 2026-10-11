@@ -1,20 +1,13 @@
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
-        return backtrack(nums, target, 0, 0);
+        return solve(nums, target, 0, 0);
     }
-
-    private int backtrack(int[] nums, int target, int index, int currentSum) {
-        if (index == nums.length) {
-            return currentSum == target ? 1 : 0;
+    public int solve(int[] nums, int target, int i, int currSum) {
+        if (i == nums.length) {
+            return currSum == target ? 1 : 0;
         }
-
-        
-        int add = backtrack(nums, target, index + 1, currentSum + nums[index]);
-
-      
-        int subtract = backtrack(nums, target, index + 1, currentSum - nums[index]);
-
-        
-        return add + subtract;
+        int take = solve(nums, target, i + 1, currSum + nums[i]);
+        int skip = solve(nums, target, i + 1, currSum - nums[i]);
+        return take + skip;
     }
 }
