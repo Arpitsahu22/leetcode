@@ -1,27 +1,37 @@
 class Solution {
-    int[][][] dp;
     public int findMaxForm(String[] strs, int m, int n) {
-        dp = new int[strs.length][m + 1][n + 1];
-        for (int i = 0; i < strs.length; i++) {
-            for (int j = 0; j <= m; j++) {
-                Arrays.fill(dp[i][j], -1);
+        int length = strs.length;
+        int[][][] dp = new int[m + 1][n + 1][length + 1];
+        
+        int[][] counts = new int[length][2];
+        for (int idx = 0; idx < length; idx++) {
+            int zeros = 0, ones = 0;
+            String s = strs[idx];
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == '0') zeros++;
+                else ones++;
+            }
+            counts[idx][0] = zeros;
+            counts[idx][1] = ones;
+        }
+        
+        for (int idx = length - 1; idx >= 0; idx--) {
+            int zeros = counts[idx][0];
+            int ones = counts[idx][1];
+            
+            for (int i = 0; i <= m; i++) {
+                for (int j = 0; j <= n; j++) {
+                    int skip = dp[i][j][idx + 1];
+                    
+                    int take = 0;
+                    if (i >= zeros && j >= ones) {
+                        take = 1 + dp[i - zeros][j - ones][idx + 1];
+                    }
+                    
+                    dp[i][j][idx] = Math.max(skip, take);
+                }
             }
         }
-        return solve(strs, m, n, 0);
-    }
-    public int solve(String[] strs, int m, int n, int i) {
-        if (i == strs.length) return 0;  
-        if (dp[i][m][n] != -1) return dp[i][m][n];
-        int zeros = 0, ones = 0;
-        for (int j = 0; j < strs[i].length(); j++) {
-            if (strs[i].charAt(j) == '0') zeros++;
-            else ones++;
-        }
-        int take = 0;
-        if (m >= zeros && n >= ones) {
-            take = 1 + solve(strs, m - zeros, n - ones, i + 1);
-        }
-        int skip = solve(strs, m, n, i + 1);
-        return dp[i][m][n] = Math.max(take, skip);
+        return dp[m][n][0];
     }
 }
