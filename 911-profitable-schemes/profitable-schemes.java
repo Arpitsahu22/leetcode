@@ -4,7 +4,7 @@ class Solution {
        int [][][] dp = new int[group.length][n + 1][minProfit + 1];
         for (int i = 0; i < group.length; i++) {
             for (int j = 0; j <= n; j++) {
-                java.util.Arrays.fill(dp[i][j], -1);
+                Arrays.fill(dp[i][j], -1);
             }
         }
         return solve(0, n, 0, group, profit, minProfit,dp);
