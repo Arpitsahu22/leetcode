@@ -4,8 +4,8 @@ class Solution {
         Arrays.sort(nums);
         int ans[] = new int[n];
         int prev[] = new int[n];
-        int max = 0;
-        int lastIndex = 0;
+        int maxlen = 0;
+        int parent = 0;
         for (int i = 0; i < n; i++) {
             ans[i] = 1;
             prev[i] = -1;
@@ -17,15 +17,15 @@ class Solution {
                     }
                 }
             }
-            if (ans[i] > max) {
-                max = ans[i];
-                lastIndex = i;
+            if (ans[i] > maxlen) {
+                maxlen = ans[i];
+                parent = i;
             }
         }
         List<Integer> res = new ArrayList<>();
-        while (lastIndex != -1) {
-            res.add(nums[lastIndex]);
-            lastIndex = prev[lastIndex];
+        while (parent != -1) {
+            res.add(nums[parent]);
+            parent = prev[parent];
         }
         return res;
     }
