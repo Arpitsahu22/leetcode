@@ -2,11 +2,11 @@ class Solution {
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
         boolean[] vis = new boolean[n];
-        int count = 0;
+        int c = 0;
         Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             if (vis[i] == false) {
-                count++;
+                c++;
                 q.offer(i);
                 vis[i] = true;
                 while (!q.isEmpty()) {
@@ -21,6 +21,6 @@ class Solution {
                 }
             }
         }
-        return count;
+        return c;
     }
 }
